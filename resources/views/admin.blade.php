@@ -2,52 +2,70 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная - Новости Laravel</title>
+    <title>Панель администратора</title>
 </head>
 <body>
 
-    <!-- Шапка -->
-    <header>
-        <h1>Новости Laravel</h1>
-        <nav>
-            <a href="/">Главная</a> | 
-            <a href="/category">Категории</a> | 
-            <a href="/journalist">Журналист</a> | 
-            <a href="/admin">Админ</a>
-        </nav>
-        <hr>
-    </header>
-
     <!-- Контент -->
     <main>
-        <h2>Все новости</h2>
+        <h2>Панель администратора</h2>
         
-        <div>
-            <h3>Что нового в Laravel 11?</h3>
-            <p>Обзор новых возможностей фреймворка и упрощенная структура.</p>
-            <a href="#">Читать далее...</a>
-        </div>
-        <br>
+        <h3>Управление статьями</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>ID</th>
+                <th>Заголовок</th>
+                <th>Автор</th>
+                <th>Действия</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Что нового в Laravel 11?</td>
+                <td>Иван</td>
+                <td>
+                    <button>Ред.</button>
+                    <button>Блок.</button>
+                    <button>Удал.</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Основы Eloquent ORM</td>
+                <td>Петр</td>
+                <td>
+                    <button>Ред.</button>
+                    <button>Блок.</button>
+                    <button>Удал.</button>
+                </td>
+            </tr>
+        </table>
 
-        <div>
-            <h3>Основы Eloquent ORM</h3>
-            <p>Как работать с базой данных в Laravel.</p>
-            <a href="#">Читать далее...</a>
-        </div>
-        <br>
+        <br><br>
 
-        <div>
-            <h3>Введение в Blade-шаблоны</h3>
-            <p>Узнайте, как использовать компоненты и директивы.</p>
-            <a href="#">Читать далее...</a>
-        </div>
+        <h3>Роли пользователей</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+                <th>Email</th>
+                <th>Роль</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Администратор</td>
+                <td>admin@mail.ru</td>
+                <td>
+                    <select>
+                        <option>Admin</option>
+                        <option>Journalist</option>
+                        <option>Reader</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </main>
 
     <hr>
-    <!-- Подвал -->
-    <footer>
-        <p>&copy; 2026 Laravel News. Все права защищены.</p>
-    </footer>
 
 </body>
 </html>

@@ -6,19 +6,8 @@
 </head>
 <body>
 
-    <!-- Шапка -->
-    <header>
-        <h1>Новости Laravel</h1>
-        <nav>
-            <a href="/">Главная</a> | 
-            <a href="/category">Категории</a> | 
-            <a href="/journalist">Журналист</a> | 
-            <a href="/admin">Админ</a>
-        </nav>
-        <hr>
-    </header>
+fetch ('components/footer.blade.php')
 
-    <!-- Контент -->
     <main>
         <h2>Категория: Web Development</h2>
         
@@ -37,10 +26,6 @@
     </main>
 
     <hr>
-    <!-- Подвал -->
-    <footer>
-        <p>&copy; 2026 Laravel News. Все права защищены.</p>
-    </footer>
 
 </body>
 </html>
